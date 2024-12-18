@@ -1,0 +1,54 @@
+
+
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta o alinhamento */
+  z-index: 10; /* Garante que fique acima das imagens */
+  color: white; /* Cor da seta */
+  border-radius: 50%; /* Formato circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Posiciona as setas na lateral do banner */
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+/* Remove estilos padrão do Slick */
+.slick-prev::before,
+.slick-next::before {
+  font-size: 40px;
+  color: black;
+}
+
+
+/* Posicionar os dots no topo */
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Distância do topo */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza os dots horizontalmente */
+  z-index: 10; /* Coloca os dots acima das imagens */
+}
+
+/* Estilo para os dots */
+.slick-dots li button:before {
+  font-size: 20px; /* Tamanho do ponto */
+  color: white; /* Cor do ponto */
+}
+
+/* Opcional: cor ativa dos dots */
+.slick-dots li.slick-active button:before {
+  color: black; /* Cor do ponto ativo */
+}
