@@ -36,7 +36,6 @@ export function ProductsCard() {
 
     const handleAddToCart = (product: Product) => {
         dispatch(addProductToCart(product));
-        console.log("Produto adicionado:", product); // Debug
     };
 
     const handleDetails = (product: Product) => {

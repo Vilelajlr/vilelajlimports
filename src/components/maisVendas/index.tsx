@@ -33,7 +33,6 @@ export function MaisVendas() {
     handleMaisVendidos();
   }, []);
 
-  // Configurações do React Slick
   const settings = {
     dots: false,
     infinite: true,
@@ -56,7 +55,7 @@ export function MaisVendas() {
     ],
   };
 
-  // Função para limitar o título
+  
   const truncateTitle = (title: string) => {
     return title.length > 20 ? title.substring(0, 20) + "..." : title;
   };

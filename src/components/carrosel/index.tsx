@@ -16,21 +16,21 @@ export function Carrosel() {
     arrows: true, 
     responsive: [
       {
-        breakpoint: 1024, // Para telas grandes (desktops)
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // Para telas médias (tablets)
+        breakpoint: 768, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480, // Para telas pequenas (celulares)
+        breakpoint: 480, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
